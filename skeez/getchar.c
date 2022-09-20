@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-int main()
+/* 9/18 This simply reads user input. ctrl+D to EOF from terminal */
+
+int main(void)
 {
 	int c;
 

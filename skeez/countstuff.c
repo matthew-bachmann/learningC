@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*This program counts all spaces, new lines, and tabs. Press Z to end input.*/
+/*This program counts all spaces, new lines, and tabs. ctrl+d mimics EOF from terminal.*/
 
 int main(){
 	
@@ -9,13 +9,13 @@ int main(){
 	l=0;
 	t=0;
 
-	while((c=getchar()) != 'z')
+	while((c=getchar()) != EOF)
 		if(c==' ')
 			++s;
 		else if(c=='\n')
 			++l;
 		else if(c=='\t')
 			++t;
-	printf("spaces= %d, lines= %d, tabs= %d \n", s, l, t);
+	printf("spaces= %d, new lines= %d, tabs= %d \n", s, l, t);
 return 0;
 }
